@@ -8,13 +8,13 @@ go get -u github.com/smokezl/go-worker-pool
 
 ### 导入
 ```go
-import "github.com/smokezl/govalidators"
+import "github.com/smokezl/go-worker-pool"
 ```
 
 ### 基本使用方式
 ##### 初始化
  ```go
-worker := NewGoWorker(ctx, &GoWorkerConfig{
+worker := go_worker_pool.NewGoWorker(ctx, &GoWorkerConfig{
 	Timeout:   10 * time.Minute,
     WorkerNum: 20,
     // Sync 表示是否需要调用 waitGroup
