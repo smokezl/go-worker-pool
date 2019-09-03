@@ -2,7 +2,9 @@ go-worker-pool
 ===========
 基于 goroutine 和 channel 的生产和消费工具，可以启动`一个生产者`和可配置数量的`多个消费者`，支持取消、超时，自动销毁。可以捕获消费者panic事件，影响消费者数量。
 ### 安装
-go get github.com/smokezl/go-worker-pool
+```
+go get -u github.com/smokezl/go-worker-pool
+```
 
 ### 导入
 ```go
